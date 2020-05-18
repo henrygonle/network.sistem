@@ -1,0 +1,332 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Network-Sistem</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		 <script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----font-Awesome----->
+   		<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+   		<!----font-Awesome----->
+		<!----webfonts---->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!----//webfonts---->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+		<!----start-slider-script---->
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!---- Slider ------>
+	 <link rel="stylesheet" href="css/slider.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery.cslider.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+	<script type="text/javascript">
+			$(function() {
+			
+				$('#da-slider').cslider({
+					autoplay	: true,
+					bgincrement	: 450
+				});
+			
+			});
+		</script>	
+		<script type="text/javascript">
+			$(function() {
+			
+				$('#da-slider1').cslider({
+					autoplay	: true,
+					bgincrement	: 450
+				});
+			
+			});
+		</script>	
+</head>
+	<body>
+		<!-----start-top-header----->
+		<div id="hello" class="top-header">
+		<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <img src="images/Portada1.jpg" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+			          		<h1>  </h1>
+			          		<div class="slide-text-info-btns">
+			          			<a class=  href="#"><span> </span></a>
+			          			<a class=  href="#"><span> </span></a>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/Portada2.jpg" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+			          		<h1>  </h1>
+			          		<div class="slide-text-info-btns">
+			          			<a class=  href="#"><span> </span></a>
+			          			<a class=  href="#"><span> </span></a>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/Portada3.jpg" alt="">
+			           <div class="caption text-center">
+			           	<div class="slide-text-info">
+			          		<h1>  </h1>
+			          		<div class="slide-text-info-btns">
+			          			<a class=  href="#"><span> </span></a>
+			          			<a class=  href="#"><span> </span></a>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/Portada4.jpg" alt="">
+			           <div class="caption text-center">
+			           	<div class="slide-text-info">
+			          		<h1>  </h1>
+			          		<div class="slide-text-info-btns">
+			          			<a class=  href="#"><span> </span></a>
+			          			<a class=  href="#"><span> </span></a>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/Portada5.jpg" alt="">
+			           <div class="caption text-center">
+			           	<div class="slide-text-info">
+			          		<h1>  </h1>
+			          		<div class="slide-text-info-btns">
+			          			<a class=  href="#"><span> </span></a>
+			          			<a class=  href="#"><span> </span></a>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+			    <div class="clear"> </div>
+			<!---- //End-slider----->
+		<!-----start-conatiner---->
+		<div class="container">
+			<!-----start-header---->
+			<div class="header">
+				<div class="container">
+				<div class="logo">
+					<a href="#"> </a>
+				</div>
+				<!----start-top-nav---->
+				 <nav class="top-nav">
+					<ul class="top-nav">
+						<li class="active"><a href="#hello" class="scroll">INICIO</a></li>
+						<li class="page-scroll"><a href="#over" class="scroll">SERVICIOS</a></li>
+						<li class="page-scroll"><a href="#gall" class="scroll">EQUIPOS</a></li>
+						<li class="contatct-active" class="page-scroll"><a href="#down" class="scroll">Contátanos</a></li>
+					</ul>
+					<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+				  </nav>
+				
+				<div class="clear"> </div>
+			</div>
+			<!-----//End-header---->
+			</div>
+			<!-----start-top-header----->
+		</div>
+		</div>
+		<!-----start-features----->
+		<div id="over" class="features text-center">
+			<div class="container">
+				<h2>Servicios Network-Sistem</h2>
+				<!---- start-features-grids------>
+			</div>
+				<img src="images/Planes y Servicios.jpg" alt="">	
+			</div>
+				<!---- //End-features-grids------>
+			</div>
+		</div>
+		<!-----start-features----->
+		<div id="over" class="features text-center">
+			
+			</div>
+		</div>
+					<!----- start-Share-instantly-slider---->
+					 <!-- Prettify -->
+						<link href="css/owl.carousel.css" rel="stylesheet">
+					    <script src="js/owl.carousel.js"></script>
+					    <script>
+						    $(document).ready(function() {
+						      $("#owl-demo , #owl-demo1").owlCarousel({
+						        items : 1,
+						        lazyLoad : true,
+						        autoPlay : true,
+						      });
+						    });
+					    </script>
+					    <script>
+						    $(document).ready(function() {
+						      $("#owl-demo3").owlCarousel({
+						        items : 4,
+						        lazyLoad : true,
+						        autoPlay : true,
+						        navigation: false,
+						        pagination: false,
+						      });
+						    });
+					    </script>
+		<!-----//End-Share instantly----->
+		<!-----start-New Feature------>
+			</div>
+				<img src="images/PAQUETES DE INSTALACIÓN.jpg" alt="">	
+			</div>
+		<!-----//End-New Feature------>
+		<!----- start-gallery----->
+		<div id="gall" class="gallery">
+			<div class="container">
+				<h3>EQUIPOS CON LOS QUE TRABAJAMOS</h3>
+				<p>Contamos con los mejores equipos de nueva generación los cuales nos ofrecen mejor estabilidad en las conexiones.</p>
+			</div>
+			<div id="owl-demo3" class="owl-carousel owl-carousel2">
+				                <div class="item">
+				                	<img class="lazyOwl" data-src="images/ManoStation AC Loco.jpg" alt="Lazy Owl Image">
+				                	<p class="img_slider"><span class="g-title">ManoStation AC Loco </span> <a class="likes" href="#"><i class="fa fa-heart"> </i>  </a></p>
+				                </div>
+				                <div class="item">
+				                	<img class="lazyOwl" data-src="images/LiteBeam M5.jpg" alt="Lazy Owl Image">
+				                	<p class="img_slider"><span class="g-title">LiteBeam M5</span> <a class="likes" href="#"><i class="fa fa-heart"> </i>  </a></p>
+				                </div>
+				                <div class="item">
+				                	<img class="lazyOwl" data-src="images/Litebeam AC GEN2.jpg" alt="Lazy Owl Image">
+				                	<p class="img_slider"><span class="g-title">Litebeam AC GEN2</span> <a class="likes" href="#"><i class="fa fa-heart"> </i>  </a></p>
+				                </div>
+				                <div class="item">
+				                	<img class="lazyOwl" data-src="images/Mimosa N5x25.jpg" alt="Lazy Owl Image">
+				                	<p class="img_slider"><span class="g-title">Mimosa N5x25</span> <a class="likes" href="#"><i class="fa fa-heart"> </i>  </a></p>
+				                </div>
+				                <div class="item">
+				                	<img class="lazyOwl" data-src="images/Nanobeam AC GEN2.jpg" alt="Lazy Owl Image">
+				                	<p class="img_slider"><span class="g-title">Nanobeam AC GEN2</span> <a class="likes" href="#"><i class="fa fa-heart"> </i>  </a></p>
+				                </div>
+				                <div class="item">
+				                	<img class="lazyOwl" data-src="images/Nanobridge M5.jpg" alt="Lazy Owl Image">
+				                	<p class="img_slider"><span class="g-title">Nanobridge M5</span> <a class="likes" href="#"><i class="fa fa-heart"> </i>  </a></p>
+				                </div>
+				                <div class="item">
+				                	<img class="lazyOwl" data-src="images/Nanostation M5.jpg" alt="Lazy Owl Image">
+				                	<p class="img_slider"><span class="g-title">Nanostation M5</span> <a class="likes" href="#"><i class="fa fa-heart"> </i>  </a></p>
+				                </div>
+				                <div class="item">
+				                	<img class="lazyOwl" data-src="images/PowerBeam 5AC Gen2.jpg" alt="Lazy Owl Image">
+				                	<p class="img_slider"><span class="g-title">PowerBeam 5AC Gen2</span> <a class="likes" href="#"><i class="fa fa-heart"> </i>  </a></p>
+				                </div>
+				                <div class="item">
+				                	<img class="lazyOwl" data-src="images/PowerBeam 300 & 400 M5.jpg" alt="Lazy Owl Image">
+				                	<p class="img_slider"><span class="g-title">PowerBeam 300 & 400 M5</span> <a class="likes" href="#"><i class="fa fa-heart"> </i>  </a></p>
+				                </div>
+				                <div class="item">
+				                	<img class="lazyOwl" data-src="images/Radio Rocket M5 AC.jpg" alt="Lazy Owl Image">
+				                	<p class="img_slider"><span class="g-title">Radio Rocket M5 AC</span> <a class="likes" href="#"><i class="fa fa-heart"> </i>  </a></p>
+				                </div>
+				                <div class="item">
+				                	<img class="lazyOwl" data-src="images/Sector AC Lite.jpg" alt="Lazy Owl Image">
+				                	<p class="img_slider"><span class="g-title">Sector AC Lite</span> <a class="likes" href="#"><i class="fa fa-heart"> </i>  </a></p>
+				                </div>
+				                <div class="item">
+				                	<img class="lazyOwl" data-src="images/MicroTik.jpg" alt="Lazy Owl Image">
+				                	<p class="img_slider"><span class="g-title">MicroTik</span> <a class="likes" href="#"><i class="fa fa-heart"> </i>  </a></p>
+				                </div>
+				                <div class="item">
+				                	<img class="lazyOwl" data-src="images/Panel Solar.jpg" alt="Lazy Owl Image">
+				                	<p class="img_slider"><span class="g-title">Panel Solar</span> <a class="likes" href="#"><i class="fa fa-heart"> </i>  </a></p>
+				                </div>
+				                <div class="item">
+				                	<img class="lazyOwl" data-src="images/UPS Forza.jpg" alt="Lazy Owl Image">
+				                	<p class="img_slider"><span class="g-title">UPS Forza</span> <a class="likes" href="#"><i class="fa fa-heart"> </i>  </a></p>
+				                </div>
+				                <div class="item">
+				                	<img class="lazyOwl" data-src="images/Bateria 100 AMP.jpg" alt="Lazy Owl Image">
+				                	<p class="img_slider"><span class="g-title">Bateria 100 AMP</span> <a class="likes" href="#"><i class="fa fa-heart"> </i>  </a></p>
+				                </div>
+				                <div class="clearfix"> </div>
+				                          
+		</div>
+		<div id="down"class="">
+			</div>
+				<img src="images/Contactanos1.jpg" alt="">	
+			</div>			
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+
+			<a href="#top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			<!---- start-smoth-scrolling---->
+			<script type="text/javascript">
+				$(function() {
+				  $('a[href*=#]:not([href=#])').click(function() {
+				    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			
+				      var target = $(this.hash);
+				      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				      if (target.length) {
+				        $('html,body').animate({
+				          scrollTop: target.offset().top
+				        }, 1000);
+				        return false;
+				      }
+				    }
+				  });
+					});
+			</script>
+			<!---- //End-smoth-scrolling---->
+		</div>
+		<!-----//End-footer----->
+		<!-----//End-conatiner---->
+	</body>
+</html>
+
